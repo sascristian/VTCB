@@ -39,7 +39,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     string private _symbol;
 
     /**
-     * @dev Sets the values for {VersatileCoin} and {VTCX}.
+     * @dev Sets the values for {VersatileCoin} and {VTCB}.
      *
      * The default value of {decimals} is 18. To select a different value for
      * {decimals} you should overload it.
