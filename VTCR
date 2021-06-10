@@ -3,10 +3,10 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // Sample token contract
 //
-// Symbol        : VTCB
+// Symbol        : VTCR
 // Name          : VersatileCoin Token
-// Total supply  : 100000
-// Decimals      : 2
+// Total supply  : 100000000
+// Decimals      : 10
 // Owner Account : 0x26995e450c653Ba390c2Dd50F237FB97C1F5bc01
 //
 // Enjoy.
@@ -16,7 +16,7 @@ pragma solidity ^0.4.24;
 
 
 // ----------------------------------------------------------------------------
-// VC: VersatileCoin
+// VC: VersatileCoin VTCR
 // ----------------------------------------------------------------------------
 contract SafeMath {
 
@@ -85,10 +85,10 @@ contract VersatileCoin is ERC20Interface, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "VTCB";
+        symbol = "VTCR";
         name = "VersatileCoin";
-        decimals = 2;
-        _totalSupply = 100000;
+        decimals = 18;
+        _totalSupply = 100000000;
         balances[0x26995e450c653Ba390c2Dd50F237FB97C1F5bc01] = _totalSupply;
         emit Transfer(address(0), 0x26995e450c653Ba390c2Dd50F237FB97C1F5bc01, _totalSupply);
     }
